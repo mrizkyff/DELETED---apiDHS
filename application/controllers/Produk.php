@@ -10,7 +10,7 @@ class Produk extends CI_Controller
         parent::__construct();
         $this->load->model('M_produk');
         $this->load->library('form_validation');        
-	$this->load->library('datatables');
+	    $this->load->library('datatables');
     }
 
     public function index()
@@ -28,13 +28,13 @@ class Produk extends CI_Controller
         $row = $this->M_produk->get_by_id($id);
         if ($row) {
             $data = array(
-		'id_produk' => $row->id_produk,
-		'namaBarang' => $row->namaBarang,
-		'stok' => $row->stok,
-		'harga' => $row->harga,
-		'deskripsi' => $row->deskripsi,
-		'tgl_stok' => $row->tgl_stok,
-		'gambar' => $row->gambar,
+            'id_produk' => $row->id_produk,
+            'namaBarang' => $row->namaBarang,
+            'stok' => $row->stok,
+            'harga' => $row->harga,
+            'deskripsi' => $row->deskripsi,
+            'tgl_stok' => $row->tgl_stok,
+            'gambar' => $row->gambar,
 	    );
             $this->load->view('produk/tb_produk_read', $data);
         } else {
@@ -48,13 +48,13 @@ class Produk extends CI_Controller
         $data = array(
             'button' => 'Create',
             'action' => site_url('produk/create_action'),
-	    'id_produk' => set_value('id_produk'),
-	    'namaBarang' => set_value('namaBarang'),
-	    'stok' => set_value('stok'),
-	    'harga' => set_value('harga'),
-	    'deskripsi' => set_value('deskripsi'),
-	    'tgl_stok' => set_value('tgl_stok'),
-	    'gambar' => set_value('gambar'),
+            'id_produk' => set_value('id_produk'),
+            'namaBarang' => set_value('namaBarang'),
+            'stok' => set_value('stok'),
+            'harga' => set_value('harga'),
+            'deskripsi' => set_value('deskripsi'),
+            'tgl_stok' => set_value('tgl_stok'),
+            'gambar' => set_value('gambar'),
 	);
         $this->load->view('produk/tb_produk_form', $data);
     }
