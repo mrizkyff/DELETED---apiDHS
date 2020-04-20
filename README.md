@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Codeigniter CRUD Generator 1.4 by [harviacode.com](http://harviacode.com)#
 
 ## About : ##
@@ -66,3 +67,6 @@ V.1.1 - 21 May 2015
 * Add client side datatables
 
 **Copyright 2015 [harviacode.com](http://harviacode.com)**
+=======
+# apiDHS
+>>>>>>> 0d0119f1de9d1c3f167398378ea4783174e7801e
