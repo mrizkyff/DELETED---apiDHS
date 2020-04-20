@@ -15,7 +15,10 @@ class Produk extends CI_Controller
 
     public function index()
     {
+        $this->load->view('administrator/templates/adm_header');
+        $this->load->view('administrator/templates/adm_sidebar');
         $this->load->view('produk/tb_produk_list');
+        $this->load->view('administrator/templates/adm_footer');
     } 
     
     public function json() {

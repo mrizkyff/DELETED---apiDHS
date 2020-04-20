@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?php echo base_url().'administrator/produk' ?>" class="nav-link">
+            <a href="<?php echo base_url().'produk' ?>" class="nav-link">
               <i class="nav-icon fas fa-cart-plus"></i>
               <p>
                 Produk
